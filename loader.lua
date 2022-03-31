@@ -1,4 +1,4 @@
-print('galaxy hub loaded pls wait')
+
 
 
 local url = "https://raw.githubusercontent.com/zy1457/galaxy-hub/main/games"
@@ -13,6 +13,6 @@ end
 
 
 local name = games[game.PlaceId] or games[game.GameId]
-return loadstring(game:HttpGet(url.. "/"..(name or "Universal")..".lua"))()
+return loadstring(game:HttpGet(url.. "/"..(name or "Universal")..".lua"))() and return print('galaxy hub loaded')
 
 

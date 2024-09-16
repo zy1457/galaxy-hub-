@@ -16,3 +16,4 @@ local name = games[game.PlaceId] or games[game.GameId]
 return loadstring(game:HttpGet(url.. "/"..(name or "Universal")..".lua"))() and return print('galaxy hub loaded pls wait')
 
 
+print('galaxy hub loaded')
